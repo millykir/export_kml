@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Экспорт геозон</title>
+  <style>
+    body { font-family: sans-serif; max-width: 400px; margin: 2em auto; }
+    label { display: block; margin-top: 1em; }
+    input { width: 100%; padding: 0.5em; }
+    button { margin-top: 1.5em; padding: 0.7em; width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>Экспорт геозон в KML</h1>
+  <form method="post">
+    <label>API Base URL:
+      <input type="text" name="api_base" value="http://10.99.35.77:443/api" required>
+    </label>
+    <label>Username:
+      <input type="text" name="username" value="root" required>
+    </label>
+    <label>Password:
+      <input type="password" name="password" value="!Qazxsw2" required>
+    </label>
+    <label>Имя KML-файла:
+      <input type="text" name="filename" value="geozones.kml">
+    </label>
+    <button type="submit">Экспортировать</button>
+  </form>
+</body>
+</html>
